@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Venice Mila | The Four Kingdoms</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #e7eadf;
+            color: #24352d;
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+
+            background:
+                radial-gradient(circle at 50% 45%, rgba(211, 221, 193, 0.9), transparent 42%),
+                linear-gradient(135deg, #dfe6d7, #b8c8b5 48%, #7f9785);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(255,255,255,0.45), transparent 25%),
+                radial-gradient(circle at 80% 80%, rgba(40,70,55,0.12), transparent 30%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+            padding: 40px 25px;
+        }
+
+        .author {
+            font-family: "Inter", sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: #40594b;
+            margin-bottom: 28px;
+        }
+
+        .ornament {
+            color: #718875;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            letter-spacing: 0.3em;
+        }
+
+        h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(4rem, 10vw, 7.5rem);
+            line-height: 0.85;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            color: #21382d;
+            text-shadow: 0 2px 18px rgba(255,255,255,0.35);
+        }
+
+        .subtitle {
+            margin-top: 28px;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.35rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: #526c5b;
+        }
+
+        .tagline {
+            margin: 38px auto 0;
+            max-width: 520px;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.45rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #31483b;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 14px 34px;
+            border: 1px solid #526c5b;
+            color: #30483a;
+            text-decoration: none;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            background: rgba(239, 243, 232, 0.45);
+        }
+
+        .button:hover {
+            background: #526c5b;
+            color: #f3f4ed;
+        }
+
+        .scroll {
+            position: absolute;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.65rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: #526c5b;
+        }
+
+        .scroll::after {
+            content: "↓";
+            display: block;
+            margin-top: 8px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 600px) {
+
+            .hero-content {
+                padding: 30px 20px;
+            }
+
+            .author {
+                font-size: 0.7rem;
+                letter-spacing: 0.25em;
+            }
+
+            h1 {
+                font-size: clamp(3.2rem, 17vw, 5rem);
+            }
+
+            .subtitle {
+                font-size: 1rem;
+                letter-spacing: 0.16em;
+            }
+
+            .tagline {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <div class="author">
+                Venice Mila
+            </div>
+
+            <div class="ornament">
+                ✦
+            </div>
+
+            <h1>
+                The Four<br>Kingdoms
+            </h1>
+
+            <div class="subtitle">
+                Book I · The Beginning
+            </div>
+
+            <p class="tagline">
+                Four kingdoms. One forgotten destiny.
+            </p>
+
+            <a href="#story" class="button">
+                Enter the Realm
+            </a>
+
+        </div>
+
+        <div class="scroll">
+            Discover
+        </div>
+
+    </main>
+
+</body>
+</html>
