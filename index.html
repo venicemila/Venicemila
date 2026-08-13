@@ -166,7 +166,57 @@
                 font-size: 1.25rem;
             }
         }
-    </style>
+   .story-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 25px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #e7eadf 0%,
+            #d7dfd2 100%
+        );
+}
+
+.story-content {
+    max-width: 700px;
+}
+
+.section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #718875;
+    margin-bottom: 25px;
+}
+
+.story-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    font-weight: 500;
+    color: #263d31;
+    margin-bottom: 30px;
+}
+
+.story-intro {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #40594b;
+    margin-bottom: 25px;
+}
+
+.story-content p:not(.story-intro) {
+    max-width: 570px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    color: #526459;
+} </style>
 </head>
 
 <body>
@@ -206,6 +256,34 @@
         </div>
 
     </main>
+<section id="story" class="story-section">
 
+    <div class="story-content">
+
+        <div class="section-label">
+            THE FOUR KINGDOMS
+        </div>
+
+        <h2>
+            A story beyond our world
+        </h2>
+
+        <p class="story-intro">
+            Beyond the boundaries of the world we know, four kingdoms
+            exist in an ancient balance between Light and Shadow.
+        </p>
+
+        <p>
+            Each kingdom carries the power of a season, bound by an
+            ancient balance that has endured for generations.
+        </p>
+
+        <a href="#kingdoms" class="button">
+            Discover the Realms
+        </a>
+
+    </div>
+
+</section>
 </body>
 </html>
