@@ -12,7 +12,118 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
-        * {
+        /* =========================
+   THE FOUR REALMS
+========================= */
+
+.kingdoms-section {
+    min-height: 100vh;
+    padding: 100px 8%;
+    background: #e7eadf;
+}
+
+.kingdoms-intro {
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.kingdoms-section h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 600;
+    color: #29463b;
+    margin: 20px 0 25px;
+}
+
+.kingdoms-description {
+    max-width: 650px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #40594f;
+}
+
+.kingdoms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.kingdom-card {
+    display: block;
+    min-height: 300px;
+    padding: 35px;
+    text-decoration: none;
+    color: #30483d;
+    border: 1.5px solid #718875;
+    background: rgba(240, 244, 234, 0.18);
+    transition: all 0.3s ease;
+}
+
+.kingdom-card:hover {
+    transform: translateY(-5px);
+    background: rgba(240, 244, 234, 0.45);
+}
+
+.kingdom-symbol {
+    font-size: 2rem;
+    color: #496b5d;
+    margin-bottom: 25px;
+}
+
+.kingdom-name {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    color: #496b5d;
+    margin-bottom: 12px;
+}
+
+.kingdom-season {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #29463b;
+    margin-bottom: 15px;
+}
+
+.kingdom-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #40594f;
+    margin-bottom: 30px;
+}
+
+.kingdom-enter {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #496b5d;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .kingdoms-section {
+        padding: 80px 25px;
+    }
+
+    .kingdoms-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .kingdom-card {
+        min-height: auto;
+        padding: 30px;
+    }
+
+}* {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
