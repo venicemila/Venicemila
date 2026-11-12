@@ -623,6 +623,81 @@ a.button {
     font-weight: 700 !important;
 }
 
+        
+/* =================================
+   VENICE MILA - ENCHANTED PALETTE
+   ================================= */
+
+/* FIRST PAGE - HERO */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #9FB49F 0%,
+        #A9BCA7 55%,
+        #91A891 100%
+    ) !important;
+}
+
+/* SECOND PAGE - FOUR KINGDOMS */
+.kingdoms-section {
+    background: linear-gradient(
+        135deg,
+        #BDCCB9 0%,
+        #C5D2BF 100%
+    ) !important;
+
+    position: relative;
+}
+
+/* THIRD PAGE - STORY */
+.story-section {
+    background: linear-gradient(
+        135deg,
+        #D0DCCB 0%,
+        #D8E1D2 100%
+    ) !important;
+
+    position: relative;
+}
+
+/* MAGICAL SECTION DIVIDERS */
+.kingdoms-section::before,
+.story-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(70%, 260px);
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #718A73,
+        transparent
+    );
+    pointer-events: none;
+}
+
+.kingdoms-section::after,
+.story-section::after {
+    content: "✧";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 12px;
+    color: #526F5C;
+    background: #BDCCB9;
+    font-size: 22px;
+    pointer-events: none;
+}
+
+/* MATCH THE THIRD SECTION ORNAMENT */
+.story-section::after {
+    background: #D0DCCB;
+}
+
     </style>
 </head>
 
